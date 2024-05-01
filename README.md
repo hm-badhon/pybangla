@@ -24,7 +24,7 @@ pip install pybangla
 # Usage
 
 ## 1. Text Normalization
-
+### It supports converting Bangla abbreviations, symbols, and currencies to English.
 ```py
 import pybangla
 nrml = pybangla.Normalizer()
@@ -96,7 +96,7 @@ Supported
 
 
 ## 2. Number Conversion
-
+### It supports converting Bangla text numbers to numeric numbers.
 ```py
 text = "আপনার ফোন নম্বর হলো জিরো ওয়ান ডাবল সেভেন থ্রি ডাবল ফাইভ নাইন থ্রি সেভেন নাইন"
 text = nrml.word2number(text)
@@ -185,6 +185,7 @@ number = nrml.number_convert(number, language="bn")
 ```
 
 ## 3. Date Format
+### It supports converting different formats of Bangla date to English date.
 ```py
 
 import pybangla
