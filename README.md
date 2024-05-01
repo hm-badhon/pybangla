@@ -24,7 +24,7 @@ pip install pybangla
 # Usage
 
 ## 1. Text Normalization
-### It supports converting Bangla abbreviations, symbols, and currencies to English.
+### It supports converting Bangla abbreviations, symbols, and currencies to Bangla textual format.
 ```py
 import pybangla
 nrml = pybangla.Normalizer()
@@ -290,6 +290,7 @@ print(f"{en_date}")
 ```
 
 ## 4. Today, Months, Weekdays, Seasons
+### It converts Bangla (today, months, weekdays, and seasons) to English and English to Bangla, and vice versa, in a pair format.
 
 ## 1. Today:
 
@@ -334,7 +335,6 @@ print(month)
     'en': ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 }
 ```
-
 
 ```py
 month = nrml.months(month="মার্চ")
